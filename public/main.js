@@ -1,6 +1,6 @@
 import InputManager from "./input.js"
 
-const socket = io("http://localhost:3000")
+const socket = io("https://3ymqx8.sse.codesandbox.io/")
 let game, uid
 
 socket.on("gameState", state => game = state)
