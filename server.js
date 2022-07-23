@@ -23,7 +23,7 @@ io.on("connection", socket => {
         intervalId = setInterval(() => {
             game.update()
             io.emit("gameState", game)
-        })
+        }, 4)
     }
 
     game.createPlayer(uid)
